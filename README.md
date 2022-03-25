@@ -1,4 +1,4 @@
-# weCare (Group-46 Healthcare-Management)
+# weCare (Group-46 Healthcare Management System)
 
 Group Members
 | Name | ID |
