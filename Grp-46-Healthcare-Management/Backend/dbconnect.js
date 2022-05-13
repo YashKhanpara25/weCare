@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const dbconnect = async() => {
     try{
         
-        const dbconnection = await mongoose.connect('mongodb+srv://weCare:R9vBDTpYr27tNBg@cluster0.fsqza.mongodb.net/weCare?retryWrites=true&w=majority', {
+        const dbconnection = await mongoose.connect(process.env.MongoDB, {
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true,
