@@ -1,0 +1,5 @@
+#.env file
+./Grp-46-Healthcare-Management/Frontend/node_modules
+./Grp-46-Healthcare-Management/Backend/node_modules
+./Grp-46-Healthcare-Management/Frontend/.env
+./Grp-46-Healthcare-Management/Backend/.env

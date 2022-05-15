@@ -64,7 +64,6 @@ export default function DoctorList() {
   const loopfunc = () => {
     const arr = []
     for(let i = 0; i < list.length; i++){
-      if(list)
       arr.push(<Grid item xs={6} sm={3}>
           <SnackbarProvider maxSnack={3}>
               <DoctorSelectUtil name = {list[i].name} email = {list[i].email} id = {list[i]._id} />
@@ -80,7 +79,7 @@ export default function DoctorList() {
       <div style={{padding: "4px"}}><CardContent>
       {cookie.userCookie.doctor_email ?
       <Typography paddingLeft = {2} component="h2" variant="h5" color="default" gutterBottom>
-      Your default doctor is {console.log(cookie.userCookie)}
+      Your default doctor's email id is {cookie.userCookie.doctor_email}
       </Typography> :
       <Typography paddingLeft = {2} component="h2" variant="h6" color="default" gutterBottom>
       No default doctor set yet. <br />We would suggest you to select a default doctor, so that a doctor can be notified if there is some problems with your health conditions.

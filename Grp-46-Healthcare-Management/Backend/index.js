@@ -8,7 +8,8 @@ const Doctor = require('./Models/doctor');
 require('dotenv').config();
 
 const app = express();
-// app.use(express.static("public"));
+// without build
+//app.use(express.static("public"));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -16,7 +17,8 @@ app.use(express.urlencoded({extended: false}));
 dbconnect(); // connect to the database
 
 app.get('/', (req, res) => {
-    // res.sendFile(path.join(__dirname+'/public/index.html'));
+    // without build
+    //res.sendFile(path.join(__dirname+'/public/index.html'));
 }); 
 
 // Routes
